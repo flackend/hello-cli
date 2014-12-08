@@ -1,0 +1,11 @@
+#! /usr/bin/env php
+
+<?php
+
+require 'vendor/autoload.php';
+
+use Flack\Console\Command\HelloCommand;
+use Flack\Console\Application\SingleCommandApplication;
+
+$app = new SingleCommandApplication('Hello App', '0.1');
+$app->run();
